@@ -1,0 +1,12 @@
+<div class="my-4">
+	<h2>{{item.category_title}}</h2>
+	<p class="pb-2">{{item.category_description}}</p>
+
+	{% for subitem in item.menu_items %}
+	<div class="py-3">
+		<h4>{{subitem.dish_title}}</h4>
+		<p>{{subitem.dish_description}}</p>
+		<p>${{subitem.dish_price}}</p>
+	</div>
+	{% endfor %}
+</div>

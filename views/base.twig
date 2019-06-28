@@ -1,0 +1,48 @@
+{% block html_head_container %}
+
+	{% include 'html-header.twig' %}
+
+	</head>
+
+{% endblock %}
+
+<body class="{{body_class}}" data-template="base.twig" itemscope itemtype="http://schema.org/WebPage">
+
+	<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KT355J8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% include 'parts/scripts/scripts-body.twig' %}
+
+    
+    <div id="wrapper" class="hfeed">
+  			
+		{# Main page header #}
+		{% include 'parts/header.twig' %}
+
+		<main role="main">
+
+			{% include 'parts/text-header-block.twig' %}
+
+			{% block content %}
+
+				{{ __('No content available.', 'bedrock') }}
+
+			{% endblock %}
+
+		</main>
+
+					
+		{% block footer %}
+			{% include 'footer.twig' %}
+		{% endblock %}
+
+	</div>
+
+	{{ function('wp_footer') }}
+
+	{% include 'parts/scripts/scripts-footer.twig' %}
+
+</body>
+
+</html>

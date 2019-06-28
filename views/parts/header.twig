@@ -1,0 +1,46 @@
+<header class="header header-scroll" itemscope itemtype="http://schema.org/WPHeader">
+    {% block header %}
+        <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+
+            <div class="container">
+                <a class="site-link" href="{{site.link}}">
+                    <img class="logo" src="http://localhost/wp-content/uploads/2019/06/coop-logo-white.png"/>
+                </a>
+
+                <button class="btn btn-link d-sm-none" data-target="#slideout-menu" data-toggle="modal" type="button">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        {% for item in menu.get_items %}
+                            <li class="nav-item">
+                                {% if item.get_children %}
+                                    <div class="dropdown">
+                                        <button aria-expanded="false" aria-haspopup="true" class="btn btn-link dropdown-toggle" data-toggle="dropdown" type="button">
+                                            {{item.title}}
+                                        </button>
+                                        <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+                                            {% for child in item.get_children %}
+                                                <a class="dropdown-item" href="{{child.get_link}}">{{child.title}}</a>
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                {% else %}
+                                    <a class="nav-link" href="{{item.get_link}}">{{item.title}}</a>
+                                {% endif %}
+                            </li>
+
+                            
+                        {% endfor %}
+
+                        <li class="nav-item">
+                            <a class="nav-link button" href="">Request a Demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    {% endblock %}
+</header>
+<div id="container mt-4">

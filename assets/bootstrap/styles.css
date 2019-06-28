@@ -1,0 +1,79 @@
+.logo {
+  width: 250px;
+}
+.logo-nav {
+  width: 50px;
+  margin-left: 15px;
+}
+
+.hero {
+  min-height:500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero.jpg');
+  background-size: cover;
+}
+.text-shadow{
+  text-shadow: 2px 2px 4px #000000;
+}
+.footer {
+  padding-top: 100px;
+}
+.footer-watermark {
+  background-color: #ffffff;
+  background-image: url('../img/logo.png');
+  background-position: bottom -150px left -200px;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+}
+.footer-watermark-padding{
+  height:300px;
+}
+
+/*Required*/
+@media (max-width: 576px) {
+  .modal-dialog.modal-dialog-slideout {
+    width: 80%;
+  }
+}
+.modal-dialog-slideout {
+  min-height: 100%;
+  margin: 0 0 0 auto;
+  background: #fff;
+}
+.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  flex-flow: column;
+}
+.modal-dialog-slideout .modal-content {
+  border: 0;
+}
+
+/*BOOTSTRAP*/
+.carousel-indicators{
+    bottom: -40px;
+}
+.carousel-indicators li{
+    background-color: #e6e6e6;
+}
+.carousel-indicators .active{
+    background-color: #18a79d;
+}
+
+/*CONTACT FORM 7*/
+div.wpcf7-mail-sent-ok {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+div.wpcf7-response-output {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}

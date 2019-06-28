@@ -1,0 +1,26 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<section id="content" role="main">
+	<header class="header">
+		<h1 class="entry-title">
+			{% if is_day %}
+				{% set date_frmt = function('get_option', 'date_format') %}
+				Daily Archives: {{ function('get_the_time', date_frmt) }}
+			{% else if is_month %}
+				Monthly Archives: {{ function('get_the_time', 'F Y') }}
+			{% else if is_year %}
+				Yearly Archives: {{ function('get_the_time', 'Y') }}
+			{% else %}
+				Archives
+			{% endif %}	
+		/h1>
+	</header>
+	{% for post in posts %}
+		{{post.content}}
+	{% endfor %}
+</section>
+
+{% include 'parts/sidebar.twig' %}
+
+{% endblock %}

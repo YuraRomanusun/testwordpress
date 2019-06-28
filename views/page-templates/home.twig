@@ -1,0 +1,226 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <!--
+    {% for item in post.get_field('repeating_block') %}
+
+        {% include 'parts/repeating-block.twig' %}
+
+    {% endfor %}
+
+    {% filter shortcodes | raw %}
+        <div class="container mb-5">[instagram-feed]</div>
+    {% endfilter %}
+    -->
+
+    <section class="section-header pt-5 pb-5">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-md-4">
+                    <h1 class="font-weight-bold">Property Management Software</h1>
+                    <h5 class="mt-5 mb-5">By Property managers for Property Managers</h5>
+                    <button type="button" class="btn btn-warning">Request a Demo</button>
+                </div>
+
+                <div class="col-md-8">
+                    <img class="img-fluid" src="http://localhost/wp-content/uploads/2019/06/home-banner1.png"/>
+                </div>
+            </div>
+        </div>
+    </section>     
+
+    <section class="section-ourmission section-gray pt-5 pb-5 ml-5 mr-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-4">
+                    <h1 class="font-weight-bold ">Our Mission</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <p class="text-center desc">Make property managers more efficient and profitable by streamlining operations, increasing accountability, and providing transparency to their clients.</p>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-features pt-5 pb-5">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-md-12 text-center">
+                    <h1 class="font-weight-bold">Features</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_task_management.png"/>
+                        <h4 class="mt-3 mb-3 font-weight-bold">Task Management</h4>
+                        <p>Task Management Streamline maintenance and cleaning crews.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_booking_visibility.png"/>
+                        <h4 class="mt-3 mb-3 font-weight-bold">Booking Visibility</h4>
+                        <p>Booking calendar integrations with top channel providers.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_communications.png"/>
+                        <h4 class="mt-3 mb-3 font-weight-bold">Communications</h4>
+                        <p>Connect homeowners, managers, and maintenance in one, simple space.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 mb-5">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_community_management.png"/>
+                        <h4 class="mt-3 mb-3 font-weight-bold">HOA & Community Management</h4>
+                        <p>Easily share documents, events, and communicate with HOA members.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_time_tracking.png"/>
+                        <h4 class="mt-3 mb-3 font-weight-bold">Time Tracking</h4>
+                        <p>Allow employees to log hours and billable services.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_checklists.png"/>
+                        <h4 class="mt-3 mb-3 font-weight-bold">Checklists</h4>
+                        <p>Create universal tasks and checklists across multiple properties and communities.</p>
+                        <a href="">Learn More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-transparency section-gray mt-5 mb-5 ml-5 mr-5 pt-5 pb-6">
+        <div class="container">
+            <div class="row  mt-5 mb-5">
+                <div class="col-md-12 text-center mb-5">
+                    <h1 class="font-weight-bold ">Transparency</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="transparency-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_homeowners.png"/>
+                        <h4 class="mt-5 mb-3 font-weight-bold">Homeowners</h4>
+                        <p>Gives complete control and oversite of their property from wherever they are</p>
+                        <a href="" class="btn mt-5">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="transparency-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_maintenance.png"/>
+                        <h4 class="mt-5 mb-3 font-weight-bold">Maintenance</h4>
+                        <p>Task management and full visibility of task updates to both homeowners and managers.</p>
+                        <a href="" class="btn mt-5">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="transparency-item">
+                        <img src="http://localhost/wp-content/uploads/2019/06/ic_managers.png"/>
+                        <h4 class="mt-5 mb-3 font-weight-bold">Managers</h4>
+                        <p>Have complete oversight of all properties and community needs.</p>
+                        <a href="" class="btn mt-5">Learn More</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section-testimonials pt-5 mb-5">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-md-12 text-center">
+                    <h1 class="font-weight-bold">Testimonials</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme" id="testimonial-carousel">
+                        <div class="item">
+                            <img class="photo" src="http://localhost/wp-content/uploads/2019/06/testimonial-photo-2.png"/>
+
+                            <div class="inner-item">
+                                <h5 class="font-weight-bold">OLIVER GOMEZ</h5>
+                                <h6>CEO of google</h6>
+                                <i class="fa fa-quote-left fa-2x"></i>
+                                <p class="mt-1">Coop is the best home management tool, and is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s,good.
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="photo" src="http://localhost/wp-content/uploads/2019/06/testimonial-photo-1.png"/>
+
+                            <div class="inner-item">
+                                <h5 class="font-weight-bold">RITA WATSON</h5>
+                                <h6>Co-founder</h6>
+                                <i class="fa fa-quote-left fa-2x"></i>
+                                <p class="mt-1">Coop is the best home management tool, and is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s,good.
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="photo" src="http://localhost/wp-content/uploads/2019/06/testimonial-photo-1.png"/>
+
+                            <div class="inner-item">
+                                <h5 class="font-weight-bold">RITA WATSON</h5>
+                                <h6>Co-founder</h6>
+                                <i class="fa fa-quote-left fa-2x"></i>
+                                <p class="mt-1">Coop is the best home management tool, and is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s,good.
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-request ml-5 mr-5">
+        <div class="container">
+            <div class="content">
+                <h1>Request a Demo</h1>
+                <p>See how Coop can help make your maangement business more profitable.</p>
+
+                <button type="button" class="btn btn-warning">Request a Demo</button>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<section class="container">
+		{% for post in posts %}
+			{{post.content}}
+		{% endfor %}
+	</section>
+	
+
+{% endblock %}

@@ -1,0 +1,15 @@
+<div class="block-item {{item.block_theme}} p-5"  
+ {% if item.background_image %} style="background: url({{item.background_image.url}}); 
+					background-repeat: no-repeat;
+				    background-size: cover;
+				    background-position: center center;
+				    height: 100%;
+				    width: 100%;" {% endif %}>
+	<section class="container d-flex flex-column align-items-center my-5">
+		{% if item.block_icon %} <i class="{{item.block_icon}} mb-4"></i> {% endif %}
+		<h2 class="mb-4 display-4">{{item.block_title}}</h2>
+		{% if item.block_description %} <div class="text-center mb-4 h4">{{item.block_description}}</div> {% endif %}
+		<a href="{{item.page_link}}" class="btn btn-primary btn-lg border border-white">{{item.block_button_text}}</a>
+	</section>
+
+</div>

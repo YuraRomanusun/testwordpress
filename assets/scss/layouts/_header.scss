@@ -1,0 +1,31 @@
+.header {
+	nav.navbar {
+		background: transparent;
+		transition: all .3s;
+	}
+	.site-link {
+		color: $white;
+		font-size: 32px;
+		font-family: Georgia;
+		text-decoration: none;
+	}
+	a.nav-link, a.dropdown-item {
+		color: $white !important;
+		text-transform: uppercase;
+	}
+	.btn-link {
+		color: $white;
+	}
+	&.header-scroll {
+		nav.navbar {
+			background-color: $white;
+			border-bottom: 1px solid #cccccc;
+			a.nav-link, a.dropdown-item, .site-link {
+				color: $primary !important;
+			}
+		}
+		.btn-link {
+			color: $primary !important;
+		}
+	}
+}

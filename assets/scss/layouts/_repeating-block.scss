@@ -1,0 +1,27 @@
+.block-item {
+	&.light {
+		background-color: $white;
+		color: $primary;
+		h2 {
+			color: $primary;
+		}
+		.button-link {
+			background-color: $primary;
+			color: $white;
+		}
+	}
+	&.dark {
+		background-color: $primary;
+		color: $white;
+		h2 {
+			color: $white;
+		}
+		.button-link {
+			background-color: $white;
+			color: $primary;
+		}
+	}
+	i {
+		font-size: 36px;
+	}
+}

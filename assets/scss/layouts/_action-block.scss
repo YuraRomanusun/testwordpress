@@ -1,0 +1,27 @@
+.action-block {
+	background-color: $primary;
+	color: $white;
+	.action-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.action-title-book {
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+	.phone-numb {
+		font-size: 36px;
+	}
+	.button-link {
+		background-color: $white;
+	}
+}
+
+.action-block-reverse {
+	background-color: $white;
+	color: $primary;
+	.button-link {
+		background-color: $primary;
+		color: $white;
+	}
+}

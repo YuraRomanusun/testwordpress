@@ -1,0 +1,127 @@
+</div>
+<footer class="p-3 bg-primary text-center text-white">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-5 text-left mt-5">
+                <img class="logo" src="http://localhost/wp-content/uploads/2019/06/coop-logo-white.png"/>
+
+                <div class="mt-5">
+                    <i class="fab fa-facebook-f circle"></i>
+                    <i class="fab fa-twitter circle"></i>
+                    <i class="fab fa-youtube circle"></i>
+                    <i class="fab fa-google-plus circle"></i>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="footer-item">
+                        <h5>Software</h5>
+                        <a href="">Features</a>
+                        <a href="">Homeowners</a>
+                        <a href="">Maintenance</a>
+                        <a href="">Managers</a>
+                        <a href="">Pricing</a>
+                    </div>
+
+                    <div class="footer-item">
+                        <h5>COMPANY</h5>
+                        <a href="">About us</a>
+                        <a href="">Jobs</a>
+                        <a href="">Press & Media</a>
+                        <a href="">Sitemap</a>
+                    </div>
+
+                    <div class="footer-item">
+                        <h5>Downloads</h5>
+                        <a href="">Android (Google Play)</a>
+                        <a href="">Apple (App Store)</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5">
+            <div class="col-md-12">
+                <p class="float-left">Designed by Taron Badalian</p>
+                <p class="float-right">© 2019 Coop</p>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    {% if options.logo_footer %}
+        <img src="{{options.logo_footer.url}}" class="logo-footer mb-2">
+    {% endif %}
+    <div class="nav-footer mb-3">
+        <div class="d-flex justify-content-center">
+            {% for item in menu.get_items %}
+                <div class="px-2">
+                    <a href="{{item.get_link}}" class="text-white">{{item.title}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="company-info mb-3">
+        {% if options.address_info %}
+            <p>{{options.address_info}}</p>
+        {% endif %}
+        {% if options.phone_info %}
+            <p>{{options.phone_info}}</p>
+        {% endif %}
+    </div>
+    <div class="social-block d-flex justify-content-center">
+        {% for item in options.social_links %}
+            <a href="{{item.social_url}}" target="_blank" class="m-3">
+                <span class="fa-stack">
+                    <i class="fas fa-circle fa-stack-2x text-white"></i>
+                    <i class="{{item.social_icon}} fa-stack-1x"></i>
+                </span>
+            </a>
+
+
+        {% endfor %}
+    </div>
+    -->
+
+</footer>
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="slideout-menu" role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-dialog-slideout modal-sm bg-light" role="document">
+        <div class="modal-content bg-light">
+            <div class="modal-header">
+                <a class="navbar-brand" href="/">
+                    LOLA'S
+                </a>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <nav class="bg-light" id="sidebar">
+                    <ul class="nav flex-column">
+                        {% for item in menu.get_items %}
+                            {% if item.get_children %}
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">{{item.title}}</a>
+                                </li>
+                                {% for child in item.get_children %}
+                                    <li class="nav-item">
+                                        <a class="nav-link ml-4" href="{{child.get_link}}">{{child.title}}</a>
+                                    </li>
+                                {% endfor %}
+                            {% else %}
+                                <li class="nav-item">
+                                    <a href="{{item.get_link}}" class="nav-link">{{item.title}}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ function('wp_footer') }}

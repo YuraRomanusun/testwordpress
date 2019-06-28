@@ -1,0 +1,501 @@
+/*
+Theme Name: Mountain Top
+Theme URI:
+Author: Mountain Top Consulting
+Author URI: http://www.mtntopconsulting.com/
+Description:
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mtntop
+Tags:
+*/
+/*
+@font-face {
+  font-family: 'Century Gothic';
+  src:  url('../assets/fonts/CenturyGothic.eot') format('embedded-opentype'),  
+        //url('../assets/fonts/CenturyGothic.woff') format('woff'), 
+        //url('../assets/fonts/CenturyGothic.ttf')  format('truetype'), 
+        url('../assets/fonts/CenturyGothic.svg') format('svg');
+  font-weight: normal;
+}
+*/
+/*Required*/
+@media (max-width: 576px) {
+  .modal-dialog.modal-dialog-slideout {
+    width: 80%; } }
+.modal-dialog-slideout {
+  min-height: 100%;
+  margin: 0 0 0 auto;
+  background: #fff; }
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(100%, 0);
+  transform: translate(100%, 0); }
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  flex-flow: column; }
+
+.modal-dialog-slideout .modal-content {
+  border: 0; }
+
+/*BOOTSTRAP*/
+.carousel-indicators {
+  bottom: -40px; }
+
+.carousel-indicators li {
+  background-color: #e6e6e6; }
+
+.carousel-indicators .active {
+  background-color: #18a79d; }
+
+/*CONTACT FORM 7*/
+div.wpcf7-mail-sent-ok {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb; }
+
+div.wpcf7-response-output {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem; }
+
+/*
+.has-large-font-size {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+.has-huge-font-size {
+	font-size: 42px;
+	text-transform: uppercase;
+}
+*/
+.header nav.navbar {
+  background: transparent;
+  transition: all .3s; }
+.header .site-link {
+  color: #fff;
+  font-size: 32px;
+  font-family: Georgia;
+  text-decoration: none; }
+.header a.nav-link, .header a.dropdown-item {
+  color: #fff !important;
+  text-transform: uppercase; }
+.header .btn-link {
+  color: #fff; }
+.header.header-scroll nav.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc; }
+  .header.header-scroll nav.navbar a.nav-link, .header.header-scroll nav.navbar a.dropdown-item, .header.header-scroll nav.navbar .site-link {
+    color: #312c28 !important; }
+.header.header-scroll .btn-link {
+  color: #312c28 !important; }
+
+.header-text-wrapper {
+  position: relative; }
+  .header-text-wrapper .black-block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.2); }
+  .header-text-wrapper .text-wrapper {
+    position: relative;
+    padding-top: 150px; }
+  .header-text-wrapper p.sub-header {
+    font-size: 22px;
+    color: #fff; }
+
+.block-item.light {
+  background-color: #fff;
+  color: #312c28; }
+  .block-item.light h2 {
+    color: #312c28; }
+  .block-item.light .button-link {
+    background-color: #312c28;
+    color: #fff; }
+.block-item.dark {
+  background-color: #312c28;
+  color: #fff; }
+  .block-item.dark h2 {
+    color: #fff; }
+  .block-item.dark .button-link {
+    background-color: #fff;
+    color: #312c28; }
+.block-item i {
+  font-size: 36px; }
+
+footer {
+  background-color: #312c28;
+  text-align: center; }
+  footer .nav-footer ul {
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0; }
+  footer .nav-footer a {
+    color: #fff;
+    text-transform: uppercase; }
+    @media (max-width: 576px) {
+      footer .nav-footer a {
+        padding: 8px; } }
+  footer .company-info p {
+    margin-bottom: 0;
+    color: #fff; }
+  footer .social-block a {
+    text-decoration: none; }
+    footer .social-block a .social-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 37px;
+      height: 37px;
+      border-radius: 16px;
+      background-color: #fff;
+      font-size: 16px;
+      color: #000; }
+
+.action-block {
+  background-color: #312c28;
+  color: #fff; }
+  .action-block .action-title {
+    font-size: 18px;
+    text-transform: uppercase; }
+  .action-block .action-title-book {
+    font-size: 36px;
+    text-transform: uppercase; }
+  .action-block .phone-numb {
+    font-size: 36px; }
+  .action-block .button-link {
+    background-color: #fff; }
+
+.action-block-reverse {
+  background-color: #fff;
+  color: #312c28; }
+  .action-block-reverse .button-link {
+    background-color: #312c28;
+    color: #fff; }
+
+.menu-wrapper h1, .menu-wrapper h2, .menu-wrapper h3, .menu-wrapper h4, .menu-wrapper h5, .menu-wrapper h6, .menu-wrapper p, .menu-wrapper span {
+  color: #312c28; }
+
+.booking-form .wpcf7 {
+  padding: 25px 0; }
+  .booking-form .wpcf7 label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, sans-serif; }
+    .booking-form .wpcf7 label span, .booking-form .wpcf7 label input {
+      width: 100%;
+      margin-top: 3px; }
+    .booking-form .wpcf7 label .exmpl-time {
+      text-align: left;
+      font-size: 12px;
+      font-family: "Century Gothic";
+      color: #999999; }
+    .booking-form .wpcf7 label input, .booking-form .wpcf7 label textarea {
+      width: 100%;
+      border: 1px solid rgba(102, 102, 102, 0.2);
+      border-radius: 5px;
+      padding: 8.5px; }
+    .booking-form .wpcf7 label textarea {
+      resize: none; }
+  .booking-form .wpcf7 input[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: #312c28;
+    color: #fff;
+    text-transform: capitalize; }
+  .booking-form .wpcf7 .screen-reader-response {
+    display: none; }
+  .booking-form .wpcf7 .wpcf7-not-valid {
+    border: 1px solid rgba(255, 0, 0, 0.5); }
+  .booking-form .wpcf7 .wpcf7-not-valid-tip {
+    color: rgba(255, 0, 0, 0.5);
+    font-size: 13px; }
+
+.map-container .button-link {
+  background-color: #312c28;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer; }
+@media (max-width: 576px) {
+  .map-container #map {
+    min-height: 350px; } }
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+
+/******************************************************************************************************/
+
+
+
+/*GLOBAL*/
+.pb-6{
+  padding-bottom: 10rem !important;
+}
+
+/* Header */
+.header nav.navbar{
+  color: white;
+  background-color: #C6A556;
+}
+
+.header.header-scroll nav.navbar{
+  background-color: #C6A556;
+}
+
+.header nav.navbar .container{
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: white !important;
+  opacity: 0.8;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+  opacity: 1;
+}
+
+.header.header-scroll nav.navbar a.nav-link, .header.header-scroll nav.navbar a.dropdown-item, .header.header-scroll nav.navbar .site-link{
+  color: white !important;
+}
+
+.header a.nav-link, .header a.dropdown-item{
+  text-transform: none;
+}
+
+.header nav.navbar .nav-item{
+  margin-right: 20px;
+}
+
+.header nav.navbar a.nav-link.button{
+  background: white;
+  color: #C6A556 !important;
+  border-radius: 3px;
+}
+
+
+/* Footer */
+.bg-primary{
+  background-color: #C6A556 !important;
+}
+
+footer .logo{
+  width: 150px;
+}
+
+footer i{
+  margin-right: 15px;
+}
+
+footer i.circle{
+  color: #C6A556;
+  background: white;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+footer .footer-item{
+  width: 33%;
+  display: inline-block;
+  text-align: left;
+}
+
+footer .footer-item h5{
+  margin-bottom: 20px;
+}
+
+footer .footer-item a{
+  color: white;
+  margin-bottom: 15px;
+  display: block;
+  opacity: 0.8;
+}
+
+
+/* HOME PAGE */
+.page-template-home .d-flex{
+  display: none !important;
+}
+
+.page-template-home .section-header{
+  margin-top: 5rem;
+}
+
+.page-template-home .section-header h1{
+  font-size: 3.5rem;
+  color: #343A40;
+}
+
+.page-template-home .section-header h5{
+  color: #717579;
+}
+
+
+.page-template-home .section-header button{
+  color: white;
+  background-color: #C6A556;
+  border-color: #C6A556;
+  padding: 8px 40px;
+}
+
+.page-template-home .section-header button:hover{
+  color: white !important;
+}
+
+
+.section-gray {
+  background-color: #F8F8F8;
+  border-radius: .5rem;
+}
+
+.section-ourmission p.desc{
+  font-size: 20px;
+  color: #6F7377;
+}
+
+.section-features .feature-item{
+  background-color: #F8F8F8;
+  padding: 40px 30px;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+.section-features .feature-item img{
+  height: 80px;
+}
+
+.section-features .feature-item a{
+  color: #C6A556;
+}
+
+.transparency-item{
+  background-color: white;
+  padding: 40px 30px;
+  height: 100%;
+  border-radius: 0.25rem;
+  text-align: center;
+  box-shadow: 0 1px 5px rgba(200, 200, 200, 0.2);
+}
+
+.transparency-item img{
+  height: 120px;
+}
+
+.transparency-item h4{
+  color: #C6A556;
+}
+
+.transparency-item a.btn{
+  background: #C6A556;
+  padding:5px 30px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: white;
+}
+
+
+#testimonial-carousel .item{
+  text-align: center;
+}
+
+#testimonial-carousel .item .photo{
+  width: 7rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+#testimonial-carousel .inner-item{
+  margin-top: -3rem;
+  background-color: #343A40;
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+#testimonial-carousel .inner-item p{
+  color: #CCCCCC;
+}
+
+#testimonial-carousel  .owl-dots{
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#testimonial-carousel  .owl-dots .owl-dot{
+  width: 15px;
+  height: 15px;
+  background: #E5E5E5;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+#testimonial-carousel  .owl-dots .owl-dot.active{
+  background: #C6A556;
+}
+
+.section-request{
+  text-align: center;
+  background: #C6A556;
+  padding-top: 7rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.section-request .container .content{
+  background: white;
+  padding: 5rem;
+  border-radius: 1rem;
+}
+
+.section-request .container .content h1{
+  font-weight: bold;
+}
+
+.section-request .container .content p{
+  font-size: 24px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  opacity: 0.6;
+}
+
+.section-request button{
+  color: white;
+  background-color: #C6A556;
+  border-color: #C6A556;
+  padding: 8px 40px;
+  font-size: 18px;
+}
+
+.section-request button:hover{
+  color: white !important;
+}
+
+.page-template-home footer{
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}

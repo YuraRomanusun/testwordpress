@@ -1,0 +1,29 @@
+/*
+Theme Name: Mountain Top
+Theme URI:
+Author: Mountain Top Consulting
+Author URI: http://www.mtntopconsulting.com/
+Description:
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mtntop
+Tags:
+*/
+
+//Helpers
+@import "helpers/variables";
+@import "helpers/fonts";
+@import "helpers/global";
+@import "helpers/standard";
+@import "helpers/typography";
+
+//Layouts
+@import "layouts/header";
+@import "layouts/text-header-block";
+@import "layouts/repeating-block";
+@import "layouts/footer";
+@import "layouts/action-block";
+@import "layouts/menu-block";
+@import "layouts/booking-form";
+@import "layouts/map-container";

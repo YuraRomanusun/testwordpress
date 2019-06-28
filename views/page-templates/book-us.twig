@@ -1,0 +1,15 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<section class="container py-5">
+		
+		<article id="post-{{post.id}}">
+			<div class="booking-form">
+				{{ post.content }}
+			</div>
+		</article>
+	
+	</section>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+.map-container {
+	.button-link {
+		background-color: $primary;
+		color: $white;
+		border: none;
+		outline: none;
+		cursor: pointer;
+	}
+	#map {
+		@media (max-width: 576px) {
+			min-height: 350px;
+		}
+	}
+}

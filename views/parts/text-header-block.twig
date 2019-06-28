@@ -1,0 +1,15 @@
+{% set img_arr = function('wp_get_attachment_image_src', post.background_image, 'full') %}
+<div class="d-flex" style=" background: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10)), url({{img_arr[0]}}); 
+					background-repeat: no-repeat;
+				    background-size: cover;
+				    background-position: center center;
+				    max-height: 600px;
+				    height: 100vh; width: 100%;
+					color: #ffffff;">
+
+	<div class="my-auto mx-auto">
+		<h1 class="display-1 text-white text-center">{{post.header_text}}</h1>
+		<h3 class="text-white text-center">{{post.subheader_text}}</h3>
+	</div>
+
+</div>

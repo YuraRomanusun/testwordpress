@@ -1,0 +1,42 @@
+<!doctype html>
+<html {{site.language_attributes}}>
+    <head>
+
+        <meta charset="{{site.charset}}"/>
+        <title>
+            {% if wp_title %}
+                {{ wp_title }}
+            {% else %}
+                {{ site.name }}
+            {% endif %}
+        </title>
+
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+        <link rel="shortcut icon" href="{{ site.theme.link }}/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="{{ site.theme.link }}/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="{{ site.theme.link }}/assets/fontawesome/css/all.css"/>
+        <link rel="stylesheet" href="{{ site.theme.link }}/assets/bootstrap/bootstrap.min.css"/>
+        <link rel="stylesheet" href="{{ site.theme.link }}/style.css?d={{function('time')}}"/>
+
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-KT355J8');
+        </script>
+
+        {% include 'parts/scripts/scripts-head.twig' %}
+
+        {{function('wp_head')}}
+
+    </head>
+</html>

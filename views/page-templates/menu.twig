@@ -1,0 +1,42 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	{% if post.post_title == 'Menu' or post.slug == 'menu' or post.post_title == 'menu' %}
+		<div class="row bg-primary h-100 py-5 text-white">
+			<section class="container mx-auto my-auto text-center">
+				<p class="h3">Call Now</p>
+				<p class="display-4">{{options.phone_info}}</p>
+			</section>
+		</div>
+	{% endif %}
+	{% if post.post_title == 'Catering' or post.slug == 'catering' or post.post_title == 'catering' %}
+		<div class="row bg-primary h-100 py-5 text-white">
+			<section class="container text-center my-auto">
+				<p class="display-4 mb-4">{{post.catering_title}}</p>
+				<p>{{post.catering_description}}</p>
+				<a href="{{post.get_field('catering_page_link')}}" class="btn btn-light btn-lg mt-4">{{post.catering_button_text}}</a>
+			</section>
+		</div>
+	{% endif %}
+
+	<section class="container py-5 text-center">
+
+		<h2 class="display-4"> {{post.menu_title}} </h2>
+		<div> {{post.menu_description}} </div>
+
+		{% for item in post.get_field('menu_category') %}
+			{% include 'parts/menu-category.twig' %}
+		{% endfor %}
+
+		{% if post.post_title == 'Catering' or post.slug == 'catering' or post.post_title == 'catering' %}
+			<div class="action-block-reverse">
+				<section class="container d-flex justify-content-center">
+					<a href="{{post.get_field('catering_page_link')}}" class="btn btn-primary mt-4">{{post.catering_button_text}}</a>
+				</section>
+			</div>
+		{% endif %}
+
+	</section>
+
+{% endblock %}

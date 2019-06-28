@@ -1,0 +1,40 @@
+footer {
+	background-color: $primary;
+	text-align: center;
+	.nav-footer {
+		ul {
+			list-style: none;
+			margin-bottom: 0;
+			padding: 0;
+		}
+		a {
+			color: $white;
+			text-transform: uppercase;
+			@media (max-width: 576px) {
+				padding: 8px;
+			}
+		}
+	}
+	.company-info {
+		p {
+			margin-bottom: 0;
+			color: $white;
+		}
+	}
+	.social-block {
+		a {
+			text-decoration: none;
+			.social-icon {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 37px;
+				height: 37px;
+				border-radius: 16px;
+				background-color: $white;
+				font-size: 16px;
+				color: $black;
+			}
+		}
+	}
+}

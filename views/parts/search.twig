@@ -1,0 +1,28 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<section id="content" role="main">
+		{% if posts %}
+			<header class="header">
+				<h1 class="entry-title">'Search Results for: %s' {{ function('get_search_query') }}</h1>
+			</header>
+			{% for post in posts %}
+				{{post.title}}
+			{% endfor %}
+		{% else %}
+
+		<article id="post-0" class="post no-results not-found">
+			<header class="header">
+				<h2 class="entry-title">Nothing Found</h2>
+			</header>
+			<section class="entry-content">
+				<p>Sorry, nothing matched your search. Please try again.</p>
+				{ function('get_search_form') }}
+			</section>
+		</article>
+
+		{% endif %}
+	</section>
+
+{% endblock %}

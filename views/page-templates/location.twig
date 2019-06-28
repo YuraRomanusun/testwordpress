@@ -1,0 +1,19 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+	<section class="py-5 px-3 map-container">
+
+		<h2 class="mb-5 text-capitalize">{{options.address_info}}</h2>
+		{% if post.location_latitude and post.location_longitude %}
+			<input type="hidden" name="loc_lat" id="locLat" value="{{post.location_latitude}}">
+			<input type="hidden" name="loc_lng" id="locLng" value="{{post.location_longitude}}">
+			<div id="map" class="embed-responsive embed-responsive-16by9"></div>
+
+			<div class="d-flex justify-content-center py-5">
+				<button class="btn btn-primary" id="openMap"><i class="fas fa-directions"></i>Get Direction</button>
+			</div>
+		{% endif %}
+	</section>
+
+{% endblock %}
